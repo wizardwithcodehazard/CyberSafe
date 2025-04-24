@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about cybercrimes, identify scams, and get help in India">
+    <meta property="og:title" content="CyberSafe – India's Cybercrime Helpline">
+    <meta property="og:description" content="Learn about cybercrimes, identify scams, and get help in India">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cybersafe.example.com">
+    <title>CyberSafe – India's Cybercrime Helpline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="#" aria-label="CyberSafe Homepage">
+                        <span>Cyber</span><span class="logo-highlight">Safe</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#cybercrimes" class="nav-link">Cybercrimes</a></li>
+                    <li><a href="#test" class="nav-link">Q&A Test</a></li>
+                    <li><a href="#help" class="nav-link">Help</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="theme-toggle-icon light">☀️</span>
+                        <span class="theme-toggle-icon dark">🌙</span>
+                    </button>
+                    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">CyberSafe: Your Shield Against Cybercrime in India</h1>
+                    <p class="hero-subtitle">Learn, Identify, and Get Help for Cybercrimes Like Scams and Fraud</p>
+                    <a href="#help" class="btn btn-primary">Get Help Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">What is CyberSafe?</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>CyberSafe is India's premier platform dedicated to combating cybercrime. Our mission is to empower citizens with educational resources, interactive tools, and expert support to protect themselves against digital threats.</p>
+                        <p>Taking inspiration from global best practices but tailored specifically for India's unique cybersecurity landscape, CyberSafe offers:</p>
+                        <ul>
+                            <li>Educational resources on prevalent cybercrimes in India</li>
+                            <li>Interactive Q&A tests to identify potential threats</li>
+                            <li>Direct connection to cybersecurity experts</li>
+                            <li>Latest statistics and prevention strategies</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/cybersafe-icon.svg" alt="CyberSafe shield icon" class="placeholder-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cybercrimes Section -->
+        <section id="cybercrimes" class="cybercrimes section">
+            <div class="container">
+                <h2 class="section-title">Common Cybercrimes in India</h2>
+                <div class="crime-cards">
+                    <div class="crime-card" data-crime="investment">
+                        <div class="card-icon">💰</div>
+                        <h3 class="card-title">Social Media Investment Fraud</h3>
+                        <p class="card-description">Investment scams caused ₹3,216 crore losses in 2024.</p>
+                        <button class="btn btn-secondary learn-more-btn" data-modal="investment-modal">Learn More</button>
+                    </div>
+                    <div class="crime-card" data-crime="impersonation">
+                        <div class="card-icon">👤</div>
+                        <h3 class="card-title">Impersonation Scams (Digital Arrests)</h3>
+                        <p class="card-description">Over 50,000 cases of impersonation scams reported in 2024.</p>
+                        <button class="btn btn-secondary learn-more-btn" data-modal="impersonation-modal">Learn More</button>
+                    </div>
+                    <div class="crime-card" data-crime="upi">
+                        <div class="card-icon">📱</div>
+                        <h3 class="card-title">UPI/Banking Scams</h3>
+                        <p class="card-description">UPI scams account for 32% of all digital financial fraud cases.</p>
+                        <button class="btn btn-secondary learn-more-btn" data-modal="upi-modal">Learn More</button>
+                    </div>
+                    <div class="crime-card" data-crime="auction">
+                        <div class="card-icon">🛒</div>
+                        <h3 class="card-title">Online Auction Scams</h3>
+                        <p class="card-description">₹820 crore lost to fake e-commerce and auction scams yearly.</p>
+                        <button class="btn btn-secondary learn-more-btn" data-modal="auction-modal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Test Section -->
+        <section id="test" class="test section">
+            <div class="container">
+                <h2 class="section-title">Identify Your Cybercrime</h2>
+                <div class="test-container">
+                    <div id="test-intro" class="test-intro">
+                        <p>Answer 3 simple questions to help identify potential cybercrimes you may have encountered.</p>
+                        <button id="start-test-btn" class="btn btn-primary">Take Test</button>
+                    </div>
+
+                    <div id="test-questions" class="test-questions hidden">
+                        <div class="progress-bar">
+                            <div class="progress" id="test-progress"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span id="current-step">1</span>/<span id="total-steps">3</span>
+                        </div>
+
+                        <div id="question-1" class="question">
+                            <h3>Have you shared an OTP (One-Time Password) with anyone recently?</h3>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q1" value="yes">
+                                    <span class="radio-custom"></span>
+                                    Yes, I shared it with someone who called me
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="maybe">
+                                    <span class="radio-custom"></span>
+                                    I'm not sure if I shared it or not
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q1" value="no">
+                                    <span class="radio-custom"></span>
+                                    No, I never share my OTP
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="question-2" class="question hidden">
+                            <h3>Have you received a suspicious video call from an unknown number?</h3>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q2" value="yes">
+                                    <span class="radio-custom"></span>
+                                    Yes, and I answered it
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="received">
+                                    <span class="radio-custom"></span>
+                                    Yes, but I didn't answer
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q2" value="no">
+                                    <span class="radio-custom"></span>
+                                    No, I haven't received any such calls
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="question-3" class="question hidden">
+                            <h3>Have you invested in a scheme you found on social media?</h3>
+                            <div class="options">
+                                <label class="option">
+                                    <input type="radio" name="q3" value="yes">
+                                    <span class="radio-custom"></span>
+                                    Yes, I invested after seeing high returns
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="considering">
+                                    <span class="radio-custom"></span>
+                                    I'm considering investing in one
+                                </label>
+                                <label class="option">
+                                    <input type="radio" name="q3" value="no">
+                                    <span class="radio-custom"></span>
+                                    No, I haven't invested in any such scheme
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="test-navigation">
+                            <button id="prev-btn" class="btn btn-secondary hidden">Previous</button>
+                            <button id="next-btn" class="btn btn-primary">Next</button>
+                            <button id="submit-test-btn" class="btn btn-primary hidden">Show Results</button>
+                        </div>
+                    </div>
+
+                    <div id="test-results" class="test-results hidden">
+                        <h3>Your Results</h3>
+                        <div id="result-content" class="result-content">
+                            <!-- Results will be inserted here by JavaScript -->
+                        </div>
+                        <button id="retake-test-btn" class="btn btn-secondary">Retake Test</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Section -->
+        <section id="help" class="help section">
+            <div class="container">
+                <h2 class="section-title">Get Immediate Help</h2>
+                <div class="help-container">
+                    <div class="chatbot-container">
+                        <h3>AI Chatbot</h3>
+                        <div class="chatbot-window">
+                            <div class="chatbot-header">
+                                <span class="chatbot-title">CyberSafe Assistant</span>
+                            </div>
+                            <div class="chatbot-messages">
+                                <div class="bot-message">
+                                    <div class="message-content">Hello! I'm the CyberSafe Assistant. How can I help you today?</div>
+                                </div>
+                                <div class="user-message">
+                                    <div class="message-content">I think someone is trying to scam me.</div>
+                                </div>
+                                <div class="bot-message">
+                                    <div class="message-content">I'm sorry to hear that. Could you describe what happened?</div>
+                                </div>
+                            </div>
+                            <div class="chatbot-input">
+                                <input type="text" placeholder="Type your message here..." disabled>
+                                <button class="send-btn" disabled>Send</button>
+                            </div>
+                            <div class="chatbot-coming-soon">
+                                <span>Chatbot Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="expert-form-container">
+                        <h3>Connect with an Expert</h3>
+                        <form id="expert-form" class="expert-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="issue">Describe Your Issue</label>
+                                <textarea id="issue" name="issue" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Contact Method</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="contact-method" value="call" checked>
+                                        <span class="radio-custom"></span>
+                                        Phone Call
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="contact-method" value="visit">
+                                        <span class="radio-custom"></span>
+                                        In-Person Visit
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="statistics" class="statistics section">
+            <div class="container">
+                <h2 class="section-title">Cybercrime Impact in India (2024)</h2>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number" id="cases-count">0</div>
+                        <div class="stat-label">Cases Reported</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="money-lost">₹0</div>
+                        <div class="stat-label">Crore Lost</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="financial-percent">0%</div>
+                        <div class="stat-label">Financial Frauds</div>
+                    </div>
+                </div>
+                <div class="stats-source">
+                    <small>Source: I4C via Business Standard, 2024</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>For immediate help with cybercrime, contact:</p>
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-detail">
+                                <strong>National Cybercrime Helpline:</strong>
+                                <span>1930</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">💻</div>
+                            <div class="contact-detail">
+                                <strong>Cybercrime Portal:</strong>
+                                <span>cybercrime.gov.in</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-detail">
+                                <strong>Email:</strong>
+                                <span>contact@cybersafe.example.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">
+                        <span>Cyber</span><span class="logo-highlight">Safe</span>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#cybercrimes">Cybercrimes</a></li>
+                            <li><a href="#test">Q&A Test</a></li>
+                            <li><a href="#help">Get Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                            <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberSafe. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modals-container">
+        <div id="investment-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Social Media Investment Fraud</h3>
+                <p>Social media investment frauds have risen dramatically in India, with scammers using platforms like Instagram, Facebook, and WhatsApp to lure victims with promises of high returns.</p>
+                <h4>Warning Signs</h4>
+                <ul>
+                    <li>Unusually high returns (40-50% monthly)</li>
+                    <li>Pressure to recruit others (pyramid scheme)</li>
+                    <li>Requests to download unknown apps</li>
+                    <li>Foreign bank account transfers</li>
+                </ul>
+                <h4>Prevention</h4>
+                <ul>
+                    <li>Verify with SEBI before investing</li>
+                    <li>Never invest based solely on social media advice</li>
+                    <li>Be wary of schemes requiring you to recruit others</li>
+                </ul>
+                <p class="source-note">Source: I4C Report 2024, Business Standard</p>
+            </div>
+        </div>
+
+        <div id="impersonation-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Impersonation Scams (Digital Arrests)</h3>
+                <p>Impersonation scams involve fraudsters pretending to be government officials, police, or other authorities to frighten victims into making payments to avoid supposed legal consequences.</p>
+                <h4>Warning Signs</h4>
+                <ul>
+                    <li>Callers claiming to be from CBI, Income Tax, or Police</li>
+                    <li>Threats of immediate arrest or legal action</li>
+                    <li>Requests for immediate payment to avoid arrest</li>
+                    <li>Video calls showing people in fake uniforms</li>
+                </ul>
+                <h4>Prevention</h4>
+                <ul>
+                    <li>No government agency demands payment over phone</li>
+                    <li>Never share personal information over phone</li>
+                    <li>Report suspicious calls to 1930</li>
+                </ul>
+                <p class="source-note">Source: I4C Report 2024, Business Standard</p>
+            </div>
+        </div>
+
+        <div id="upi-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>UPI/Banking Scams</h3>
+                <p>UPI scams are among the most common in India due to the widespread adoption of digital payment platforms like Google Pay, PhonePe, and Paytm.</p>
+                <h4>Warning Signs</h4>
+                <ul>
+                    <li>Requests to scan QR codes to receive money</li>
+                    <li>Calls asking for UPI PIN or OTP verification</li>
+                    <li>Fake customer care numbers found on Google</li>
+                    <li>Requests to install screen sharing apps</li>
+                </ul>
+                <h4>Prevention</h4>
+                <ul>
+                    <li>Never scan QR codes to receive money</li>
+                    <li>Never share OTP, PIN, or CVV with anyone</li>
+                    <li>Verify merchant UPI IDs before payment</li>
+                    <li>Use official apps and customer care numbers only</li>
+                </ul>
+                <p class="source-note">Source: I4C Report 2024, RBI Advisory</p>
+            </div>
+        </div>
+
+        <div id="auction-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Online Auction Scams</h3>
+                <p>Online auction scams involve fraudulent listings on e-commerce platforms, social media marketplaces, or fake auction websites that never deliver products after payment.</p>
+                <h4>Warning Signs</h4>
+                <ul>
+                    <li>Prices far below market value</li>
+                    <li>Sellers refusing to meet in person</li>
+                    <li>Requests for advance payments via UPI</li>
+                    <li>Limited communication options</li>
+                </ul>
+                <h4>Prevention</h4>
+                <ul>
+                    <li>Use established platforms with buyer protection</li>
+                    <li>Research seller ratings and reviews</li>
+                    <li>Avoid advance payments without seeing products</li>
+                    <li>Meet in safe public places for high-value transactions</li>
+                </ul>
+                <p class="source-note">Source: I4C Report 2024, Consumer Affairs Ministry</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
